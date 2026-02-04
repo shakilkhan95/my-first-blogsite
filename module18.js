@@ -62,10 +62,10 @@ console.log(longestOfStr2);
 console.log('Task 5');
 //Generate a random number between 10 to 20.
 function randomNumber(min, max){
-    const random = Math.round(Math.random() * (max - min) + min);
+    const random = Math.floor(Math.random() * (max - min + 1))  + min;
     return random;
 }
 const generatedNumber = randomNumber(10, 20);
 console.log(generatedNumber)
-const generatedNumber2 = Math.round(Math.random() * 10 + 10);
+const generatedNumber2 = Math.floor(Math.random() * 11) + 10;
 console.log(generatedNumber2)
