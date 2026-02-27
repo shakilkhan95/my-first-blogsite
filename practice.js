@@ -1,4 +1,4 @@
-const numbers = [123, 45341, 343, 562, 4, 34, 235, 56, 5466, 67] ;
+const numbers = [123, 45341, 343, 562, 4, 34, 235, 56, 5466, 67];
 // const even = numbers.filter(num => num % 2 === 0);
 // let totalOfEven = 0;
 // for(const item of even){
@@ -41,7 +41,6 @@ const numbers = [123, 45341, 343, 562, 4, 34, 235, 56, 5466, 67] ;
 // const evenNumbers = findEven(numbers);
 // console.log(evenNumbers)
 
-
 // const even = (arr) => {
 //     const evenNumbers = [];
 //     for(const i of arr){
@@ -52,5 +51,16 @@ const numbers = [123, 45341, 343, 562, 4, 34, 235, 56, 5466, 67] ;
 //     return evenNumbers;
 // }
 // console.log(even(numbers))
-const even = (arr) => arr.filter(i => i % 2 === 0);
-console.log(even(numbers))
+// const even = (arr) => arr.filter(i => i % 2 === 0);
+// console.log(even(numbers))
+let data = -1;
+
+if(data){
+    console.log('true');
+}else{
+    console.log('false')
+}
+
+let a = 1;
+let b = !!a;
+console.log(b)
