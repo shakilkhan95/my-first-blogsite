@@ -1,4 +1,4 @@
-const numbers = [123, 45341, 343, 562, 4, 34, 235, 56, 5466, 67];
+// const numbers = [123, 45341, 343, 562, 4, 34, 235, 56, 5466, 67];
 // const even = numbers.filter(num => num % 2 === 0);
 // let totalOfEven = 0;
 // for(const item of even){
@@ -53,14 +53,43 @@ const numbers = [123, 45341, 343, 562, 4, 34, 235, 56, 5466, 67];
 // console.log(even(numbers))
 // const even = (arr) => arr.filter(i => i % 2 === 0);
 // console.log(even(numbers))
-let data = -1;
+// let data = -1;
 
-if(data){
-    console.log('true');
-}else{
-    console.log('false')
+// if(data){
+//     console.log('true');
+// }else{
+//     console.log('false')
+// }
+
+// let a = 1;
+// let b = !!a;
+// console.log(b)
+// const string = "Ohhh this is a fun one JavaScript has many creative ways to give you undefined. Lets break it down clearly.";
+// const splittedString = string.split(" ");
+// const capitalize = splittedString.map(word => {
+//     let cap = word[0].toUpperCase();
+//     return cap;
+// })
+
+
+
+
+// const numbers = [123, 45341, 343, 562, 4, 34, 235, 56, 5466, 67];
+// const newNumbers = numbers.map(num => num * 2);
+// const evenNumbers = numbers.filter(num => num % 2 === 0);
+// const totalOfEven = evenNumbers.reduce((total, num) => total + num, 0);
+// const averageOfEven = totalOfEven / evenNumbers.length;
+// console.log(evenNumbers);
+// evenNumbers.forEach(num => {
+//     console.log(num )
+// });
+const leftDiv = document.getElementById('left');
+
+const liElements = document.querySelectorAll('li');
+liElements.forEach(li => {
+    li.addEventListener('click', toggleColors);
+});
+
+function toggleColors(){
+    leftDiv.classList.toggle('hidden');
 }
-
-let a = 1;
-let b = !!a;
-console.log(b)
