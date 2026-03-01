@@ -66,10 +66,14 @@
 // console.log(b)
 // const string = "Ohhh this is a fun one JavaScript has many creative ways to give you undefined. Lets break it down clearly.";
 // const splittedString = string.split(" ");
-// const capitalize = splittedString.map(word => {
-//     let cap = word[0].toUpperCase();
-//     return cap;
-// })
+// const capitalizeArray = [];
+// let words = '';
+// for(const word of splittedString){
+//     words = word[0].toUpperCase() + word.slice(1);
+//     capitalizeArray.push(words);
+// }
+// const capitalizeString = capitalizeArray.join(' ');
+// console.log(capitalizeString)
 
 
 
@@ -83,13 +87,60 @@
 // evenNumbers.forEach(num => {
 //     console.log(num )
 // });
-const leftDiv = document.getElementById('left');
+// const leftDiv = document.getElementById('left');
 
-const liElements = document.querySelectorAll('li');
-liElements.forEach(li => {
-    li.addEventListener('click', toggleColors);
-});
+// const liElements = document.querySelectorAll('li');
+// liElements.forEach(li => {
+//     li.addEventListener('click', toggleColors);
+// });
 
-function toggleColors(){
-    leftDiv.classList.toggle('hidden');
+// function toggleColors(){
+//     leftDiv.classList.toggle('hidden');
+// }
+
+const marks = {
+    bangla: 74,
+    english: 64,
+    accounting: 90,
+    math: 73,
 }
+
+// function analyzeMarks(obj){
+//     let totalMarks = 0;
+//     let highestMarks = -Infinity;
+//     let lowestMarks = Infinity;
+//     for(const key in obj){
+//         totalMarks += obj[key];
+
+//         if(obj[key] > highestMarks){
+//             highestMarks = obj[key];
+//         }
+//         if(obj[key] < lowestMarks){
+//             lowestMarks = obj[key];
+//         }
+//     }
+//     const averageMarks = totalMarks / Object.keys(obj).length;
+//     return {totalMarks, 
+//             highestMarks, 
+//             lowestMarks, 
+//             averageMarks
+//         };
+// }
+
+// function analyzeMarks(obj){
+//     const marks = Object.values(obj)
+//     const totalMarks = marks.reduce((total, mark) => total + mark, 0);
+//     const highestMarks = Math.max(...marks);
+//     const lowestMarks = Math.min(...marks);
+//     const averageMarks = totalMarks / marks.length;
+//     return {
+//         totalMarks,
+//         highestMarks,
+//         lowestMarks,
+//         averageMarks
+//     }
+// }
+
+// const analyzedMarks = analyzeMarks(marks);
+// console.log(analyzedMarks)
+
