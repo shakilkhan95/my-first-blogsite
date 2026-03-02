@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     .then(res => res.json())
     .then(data => loadCard(data));
 
-    function loadCard(cards){
+    const loadCard = (cards) => {
         for(const card of cards){
             const div = document.createElement('div');
             
