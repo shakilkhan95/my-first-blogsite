@@ -108,24 +108,32 @@ const marks = {
 // function analyzeMarks(obj){
 //     let totalMarks = 0;
 //     let highestMarks = -Infinity;
+//     let highestSubject = null;
+//     let lowestSubject = null;
 //     let lowestMarks = Infinity;
 //     for(const key in obj){
 //         totalMarks += obj[key];
 
 //         if(obj[key] > highestMarks){
 //             highestMarks = obj[key];
+//             highestSubject = key;
 //         }
 //         if(obj[key] < lowestMarks){
 //             lowestMarks = obj[key];
+//             lowestSubject = key;
 //         }
 //     }
 //     const averageMarks = totalMarks / Object.keys(obj).length;
 //     return {totalMarks, 
 //             highestMarks, 
 //             lowestMarks, 
-//             averageMarks
+//             averageMarks,
+//             highestSubject,
+//             lowestSubject
 //         };
 // }
+// const analyzedMarks = analyzeMarks(marks);
+// console.log(analyzedMarks)
 
 // function analyzeMarks(obj){
 //     const marks = Object.values(obj)
