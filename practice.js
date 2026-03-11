@@ -152,3 +152,11 @@ const marks = {
 // const analyzedMarks = analyzeMarks(marks);
 // console.log(analyzedMarks)
 
+const numbers = [123, 45341, 343, 562, 4, 34, 235, 56, 5466, 67];
+
+const findEven = (numbers) => {
+    const evenNumbers = numbers.filter(num => num % 2 === 0);
+    return evenNumbers;
+}
+const evenNumbers = findEven(numbers);
+console.log(evenNumbers)
